@@ -1,0 +1,316 @@
+    /* Reset de márgenes y padding */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    /* Estilos globales */
+    body {
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1.6;
+        background-color: #333;
+        color: #333;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    /* Header */
+    header {
+        background-color: #0e0e0e;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    
+    header .logo img {
+        width: 40px;
+    }
+
+    header .logo img:hover {
+        transform: scale(1.5);
+    }
+    
+    nav ul {
+        display: flex;
+        gap: 20px;
+    }
+    
+    nav ul li:hover {
+        background: #ffffff;;
+        border-radius: 2px;
+    }
+
+    nav ul li a {
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+    
+    nav ul li a:hover {
+        color: #000000;
+    }
+    
+    /* Hero Section */
+    .hero {
+        background-color: #00bcd4;
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+        background-image: url(https://i.pinimg.com/originals/8d/b9/71/8db971b6563558579eb0a6432561651a.jpg);
+        background-position:center;
+        background-size: cover;
+        background-attachment:fixed ;
+    }
+    
+    .hero h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    
+    .btn-primary {
+        background-color: #ffeb3b;
+        color: #333;
+        padding: 10px 20px;
+        font-size: 18px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .btn-primary:hover {
+        background-color: #ff9800;
+        transform: scale(1.5);
+    }
+    
+    /* Reseñas de Juegos */
+    .reviews {
+        padding: 30px 5px;
+        background-image: url(https://sm.ign.com/ign_es/screenshot/default/hld-camp-parallax_8f84.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment:fixed ;
+        text-align: center;
+        margin: 10px 100px 20px 100px;
+        border-radius: 20px;
+    }
+    
+    .reviews h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+        color: #eeeeee;
+    }
+    
+
+    .Zelda {
+        padding: 30px 20px;
+        background-image: url(https://th.bing.com/th/id/R.145c7257bd31a6b456991cd0147a029f?rik=UmBu4qObDh0COA&pid=ImgRaw&r=0);
+        background-position: center;
+        background-size: cover;
+        background-attachment:fixed ;
+        text-align: center;
+        margin: 50px 100px 50px 100px;
+        border-radius: 20px;
+    }
+    .Zelda h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+        color: #eeeeee;
+    }
+    
+    .game-cards {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .card {
+        background-color: #eeeeeeda;
+        width: 200px;
+        padding: 20px ;
+        border-radius: 10px;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+    
+    .card:hover {
+        transform: scale(1.05);
+    }
+    
+    .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    .card h3 {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+    
+    .card p {
+        font-size: 14px;
+        color: #000000;
+        margin: 0px 0px 10px 0px;
+    }
+    
+    .btn-secondary {
+        background-color: #ff9800;
+        color: white;
+        padding: 8px 15px;
+        font-size: 14px;
+        border: none;
+        border-radius: 5px;
+        margin: 10px 0px 10px 0px;
+    }
+    
+    .btn-secondary:hover {
+        background-color: #f57c00;
+    }
+    
+    /* Tienda */
+    .store {
+        padding: 30px 20px;
+        background-color: #f1f1f1;
+        text-align: center;
+        background-image: url(https://i.kinja-img.com/gawker-media/image/upload/s--_4dq6Gzi--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/ekfhyvcrk1gouf1kkmcr.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment:fixed ;
+        margin: 10px 100px 20px 100px;
+        border-radius: 20px;
+    }
+    
+    .store h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+        color: #eeeeee;
+    }
+    
+    .store-items {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .item {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        width: 200px;
+        transition: transform 0.3s ease;
+    }
+    
+    .item:hover {
+        transform: scale(1.05);
+    }
+    
+    .item img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    .item p {
+        font-size: 18px;
+        margin: 15px 0;
+    }
+    
+    .item span {
+        font-size: 20px;
+        color: #ff5722;
+    }
+    
+    .item .btn-primary {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .item .btn-primary:hover {
+        background-color: #388e3c;
+    }
+    
+
+    .video{
+        padding: 20px 0px;
+        background-color: #525252;
+        text-align: center;
+        margin: 20px 0px 20px 0px;
+        border-radius: 50px;
+    }
+    .video h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        color: #eeeeee;
+    }
+
+    .videos{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .video1{
+    background-color: transparent;
+    border-radius: 10px;
+    text-align: center;
+    border: 0px ;
+    margin: 0px 50px 0px 30px;
+    }
+
+    .video1 iframe{
+        border-radius: 20px;
+        background-color: transparent;
+        }
+
+        .imagenes{
+            padding: 0px 0px 0px 0px;
+        background-color: transparent;
+        border-radius: 10px;
+        text-align: center;
+        border: 0px ;
+        margin: 0px 0px 0px 0px;
+
+        }
+
+        .imagenes img{
+            margin: 13px 0px 0px 0px;
+            border-radius: 20px;
+            }
+
+            .imagenes img:hover{
+                transform: scale(1.1);
+                }
+    
+    /* Footer */
+    footer {
+        background-color: #000000;
+        color: white;
+        padding: 15px;
+        text-align: center;
+    }
+    
+    footer .social-icons a {
+        color: white;
+        margin: 0 10px;
+        font-size: 18px;
+    }
+    
+    footer .social-icons a:hover {
+        color: #ffeb3b;
+    }
+    

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="Contacto.css">
+  <link rel="icon" href="icono.png" type="image/png">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <a href="Inicio.html"><img src="https://th.bing.com/th/id/R.4bd62f45310859ca2687e951ead43ccf?rik=Wxaefrbf7oDLGA&pid=ImgRaw&r=0" alt="RetroPixel Logo"></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="Inicio.html">Inicio</a></li>
+        
+        <li><a href="Guias.html">Guías</a></li>
+        <li><a href="Comunidad.html">Comunidad</a></li>
+        <li><a href="Quienes_somos.html">Quienes Somos</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Contáctanos: ¡Estamos Aquí para Escucharte!</h1>
+  </section>
+  <section class="btn-primary">
+  <p >¿Tienes preguntas, sugerencias o simplemente quieres compartir tu amor por los videojuegos retro? Nos encantaría saber de ti. En RetroPixel, valoramos cada mensaje que recibimos y nos esforzamos por responder lo más rápido posible. Ya sea que necesites ayuda con un juego, quieras colaborar con 
+    nosotros o simplemente desees saludar, estamos a solo un mensaje de distancia. ¡No dudes en ponerte en contacto!</p>
+    </section>
+
+    <div class="hola">
+        <form class="contact-form" id="contactForm">
+            <h2>Formulario de Contacto</h2>
+    
+            <input type="email" id="email" placeholder="Escribe tu email" required>
+            <input type="date" id="date" required>
+    
+            <input type="text" id="username" required minlength="3" placeholder="Escribe tu nombre" class="hola">
+    
+            <textarea id="message" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+    
+            <label>
+                <input type="checkbox" id="terms" required> Acepto los términos y condiciones
+            </label>
+    
+            <input type="submit" value="Enviar">
+        </form>
+    </div>   
+
+<script>
+   document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita el envío predeterminado del formulario
+
+    const email = document.getElementById('email').value;
+    const date = document.getElementById('date').value;
+    const username = document.getElementById('username').value;
+    const message = document.getElementById('message').value;
+
+    if (!email || !date || !username || !message) {
+        alert('Por favor, completa todos los campos antes de enviar.');
+        return;
+    }
+
+    const body = encodeURIComponent(
+        `Nombre: ${username}\nFecha: ${date}\nEmail: ${email}\nMensaje: ${message}`
+    );
+
+    const mailtoLink = `mailto:mundorexy@gmail.com?subject=Mensaje%20de%20${encodeURIComponent(username)}&body=${body}`;
+
+    if (confirm('¿Deseas enviar este mensaje?')) {
+        window.location.href = mailtoLink;
+    }
+});
+
+</script>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 RetroPixel. Todos los derechos reservados.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/people/Academia-Hola-Mundo/61552336410974/">Facebook</a>
+      <a href="https://x.com/SoyDalto">Twitter</a>
+      <a href="https://www.instagram.com/dostin.hurtado/">Instagram</a>
+    </div>
+  </footer>
+</body>
+</html>
